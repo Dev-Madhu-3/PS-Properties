@@ -25,7 +25,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="w-12 h-12 rounded-3xl overflow-hidden border border-solid border-primary-600 flex items-center justify-center">
               <img
-                src="/src/assets/icons/logo.jpg"
+                src="https://res.cloudinary.com/dpk6qsn0e/image/upload/v1767375736/logo_wzdplv.jpg"
                 className="scale-[1.1] "
                 alt="logo"
               />
@@ -36,7 +36,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
-              PS PROPERTIES
+              PS Properties
             </motion.span>
           </Link>
 

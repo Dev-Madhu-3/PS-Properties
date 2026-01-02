@@ -28,7 +28,10 @@ const Footer = () => {
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <span className="text-white font-bold text-xl">PS</span>
+                    <img
+                      src="https://res.cloudinary.com/dpk6qsn0e/image/upload/v1767375736/logo_wzdplv.jpg"
+                      alt="logo"
+                    />
                 </motion.div>
                 <span className="font-bold text-xl">{BUSINESS_INFO.name}</span>
               </div>
@@ -143,7 +146,8 @@ const Footer = () => {
         <div className="container-custom py-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>
-              &copy; {currentYear} {BUSINESS_INFO.name} Pvt Ltd. All rights reserved.
+              &copy; {currentYear} {BUSINESS_INFO.name} Pvt Ltd. All rights
+              reserved.
             </p>
             <motion.p
               className="flex items-center"

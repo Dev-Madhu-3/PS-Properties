@@ -3,7 +3,7 @@ export const BUSINESS_INFO = {
   tagline: "Your Trusted Real Estate Partner",
   address: "Nellore, India",
   phone: "+91 91777 00903",
-  email: "info@psproperties.com",
+  email: "prathapsai@gmail.com",
   description:
     "Professional real estate agency dedicated to bridging the gap between clients and customers with transparent and reliable property solutions.",
   approvals: ["NUDA", "RERA", "DTCP"],

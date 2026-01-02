@@ -181,25 +181,16 @@ const Contact = () => {
                 transition={{ duration: 0.5 }}
                 whileHover={{ y: -10 }}
               >
-                <div className="h-64 bg-gray-200 flex items-center justify-center">
-                  <div className="text-center">
-                    <motion.div
-                      animate={{
-                        scale: [1, 1.1, 1],
-                        rotate: [0, 5, 0],
-                      }}
-                      transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                        repeatType: "reverse",
-                      }}
-                    >
-                      <FiMapPin className="text-4xl text-primary-600 mx-auto mb-2" />
-                    </motion.div>
-                    <p className="text-gray-600">Interactive Map</p>
-                    <p className="text-sm text-gray-500">Nellore, India</p>
-                  </div>
+                <div className="h-64 w-full">
+                  <iframe
+                    title="Nellore Office Location"
+                    src="https://www.google.com/maps?q=Nellore,+Andhra+Pradesh,+India&output=embed"
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
+
                 <div className="p-6">
                   <h3 className="font-semibold text-gray-800 mb-2">
                     Quick Contact Options
@@ -214,7 +205,7 @@ const Contact = () => {
                       {
                         icon: <FaWhatsapp />,
                         text: "Chat on WhatsApp",
-                        href: `https://wa.me/918340859443`,
+                        href: `https://wa.me/${BUSINESS_INFO.phone}`,
                       },
                       {
                         icon: <FiMail />,
@@ -335,7 +326,7 @@ const Contact = () => {
             </Slide>
             <Slide triggerOnce direction="right" delay={600}>
               <a
-                href={`https://wa.me/918340859443`}
+                href={`https://wa.me/${BUSINESS_INFO.phone}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
