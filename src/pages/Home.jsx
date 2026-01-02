@@ -163,7 +163,7 @@ const Home = () => {
                 whileHover={{ y: -10 }}
               >
                 <img
-                  src="/src/assets/images/hero-bg.jpg"
+                  src="https://res.cloudinary.com/dpk6qsn0e/image/upload/v1767370516/hero-bg_optimized_200_faj30b.jpg"
                   alt="Real Estate"
                   className="rounded-2xl shadow-2xl"
                 />
